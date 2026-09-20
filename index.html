@@ -1,0 +1,1012 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>ULTRA Sales Day</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a0a0a; --paper:#f5f5f0; --orange:#ff5b14; --orange-glow:#ff7b3a;
+  --display:"Montserrat",system-ui,-apple-system,sans-serif;  /* titres : Montserrat 800/900 — DA officielle Ultra */
+  --mont:"Montserrat",system-ui,-apple-system,sans-serif;
+  --serif:"Montserrat",system-ui,-apple-system,sans-serif;   /* mot-symbole ULTRA — plus de serif, DA officielle */
+  --inter:"Inter",system-ui,-apple-system,sans-serif;
+  --pad:clamp(20px,5vw,40px); --sect:clamp(72px,9vw,132px);
+  /* échelle typographique — 8 tailles, pas une de plus */
+  --t-hero:clamp(24px,2.9vw,38px);   /* h1, capitales */
+  --t-sect:clamp(21px,2.6vw,33px);   /* titres de section, capitales */
+  --t-lead:clamp(18px,1.9vw,23px);   /* accroche sous le titre */
+  --t-title:clamp(17px,1.4vw,19px);  /* tous les titres de bloc et de carte */
+  --t-body:16.5px;                   /* paragraphes principaux */
+  --t-sm:15px;                       /* listes, textes de carte, champs */
+  --t-micro:13px;                    /* microcopy, footer, états */
+  --t-label:11.5px;                  /* capitales trackées */
+  --ls-label:.18em;
+  /* thème par défaut : sombre */
+  --bg:var(--ink); --fg:var(--paper); --muted:#9d9d98; --line:rgba(245,245,240,.13); --surface:#141416;
+  --card:linear-gradient(180deg,rgba(245,245,240,.062),rgba(245,245,240,.022)); --cardline:rgba(245,245,240,.14); --cardshadow:none;
+}
+.s-light{--bg:var(--paper);--fg:var(--ink);--muted:#5f5f5a;--line:rgba(10,10,10,.13);--ghost:rgba(10,10,10,.24);--surface:#fff;--card:#fff;--cardline:rgba(10,10,10,.10);--cardshadow:0 2px 6px rgba(10,10,10,.05)}
+.s-dark{--bg:var(--ink);--fg:var(--paper);--muted:#9d9d98;--line:rgba(245,245,240,.13);--ghost:rgba(245,245,240,.28);--surface:#141416;--card:linear-gradient(180deg,rgba(245,245,240,.062),rgba(245,245,240,.022));--cardline:rgba(245,245,240,.14);--cardshadow:none}
+*{box-sizing:border-box}
+figure,figcaption{margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:var(--inter);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-top:66px}
+img{max-width:100%;display:block}
+a{color:inherit}
+[hidden]{display:none!important}
+.btn,.logo{text-decoration:none}
+h1,h2,h3,h4{font-family:var(--mont);font-weight:800;letter-spacing:-.025em;line-height:1.14;margin:0}
+h1 em,h2 em{font-style:italic;font-weight:800}
+h1 em.o,h2 em.o{color:var(--orange)}
+p{margin:0}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+section{background:var(--bg);color:var(--fg);position:relative}
+.bgshot{position:relative;isolation:isolate}
+.bgshot::before{content:"";position:absolute;inset:0;z-index:-2;background-image:var(--shot);background-size:cover;background-position:center 38%;opacity:.28;filter:grayscale(.35)}
+.bgshot::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--ink) 0%,rgba(10,10,10,.72) 32%,rgba(10,10,10,.78) 68%,var(--ink) 100%)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--pad)}
+.narrow{max-width:880px}
+.sect{padding:var(--sect) 0}
+
+.eyebrow{font-size:var(--t-label);font-weight:700;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--muted)}
+.eyebrow .o{color:var(--orange)}
+h2{font-size:var(--t-sect)}
+h3{font-size:var(--t-title)}
+.intro{color:var(--muted);font-size:var(--t-body);max-width:62ch;margin-top:20px}
+.o{color:var(--orange)}
+
+/* ---------- boutons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--orange);color:#0a0a0a;font-family:var(--inter);font-weight:700;font-size:var(--t-sm);padding:18px 34px;border:0;border-radius:4px;cursor:pointer;transition:background .2s,transform .2s;letter-spacing:-.01em}
+.btn:hover{background:var(--orange-glow);transform:translateY(-1px)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.btn-ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.btn-ghost:hover{background:rgba(125,125,125,.10);transform:none}
+.micro{font-size:var(--t-micro);color:var(--muted);margin-top:14px}
+
+/* ---------- header ---------- */
+header.top{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(10,10,10,.86);backdrop-filter:blur(12px);border-bottom:1px solid rgba(245,245,240,.10);transform:none;transition:transform .35s cubic-bezier(.2,.7,.3,1)}
+header.top.show{transform:none}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:inline-block;font-family:var(--mont);font-weight:900;font-size:19px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper);text-decoration:none;line-height:1}
+.logo .dot{color:var(--orange)}
+.logo .mk{width:28px;height:28px;border-radius:6px;background:var(--orange);color:#0a0a0a;display:grid;place-items:center;font-size:var(--t-micro);letter-spacing:0}
+.top .btn{padding:12px 22px;font-size:var(--t-micro)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:clamp(40px,5vw,64px) 0 clamp(52px,6vw,82px);overflow:hidden;text-align:center}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(58% 46% at 2% 0%,rgba(198,86,26,.34),transparent 62%),radial-gradient(58% 46% at 98% 0%,rgba(198,86,26,.30),transparent 62%),radial-gradient(70% 40% at 50% 0%,rgba(255,110,40,.10),transparent 70%)}
+.hero-in{position:relative;z-index:2;max-width:1120px;margin:0 auto}
+.wordmark{display:block;font-family:var(--mont);font-weight:900;font-size:clamp(24px,2.8vw,34px);letter-spacing:.12em;text-transform:uppercase;color:var(--paper);text-decoration:none;margin-bottom:clamp(34px,4.5vw,60px)}
+.wordmark .dot{color:var(--orange)}
+h1{font-family:var(--display);font-weight:800;font-size:var(--t-hero);text-transform:uppercase;letter-spacing:-.01em;line-height:1.16;hyphens:none;overflow-wrap:break-word;margin-top:20px;max-width:42ch;margin-inline:auto}
+.heroshot+h1{margin-top:clamp(32px,4.5vw,54px)}
+.hero-below{margin-top:clamp(46px,6vw,72px)}
+.hero .sub{color:var(--muted);font-size:clamp(15px,1.35vw,18px);margin:22px auto 0;max-width:80ch;line-height:1.55}
+.hero .sub u{text-decoration-color:rgba(245,245,240,.45);text-underline-offset:4px;color:var(--paper)}
+.hero .sub b{color:var(--paper);font-weight:600}
+.withline{font-size:var(--t-label);font-weight:600;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--muted);margin-top:26px}
+.withline b{color:var(--paper);font-weight:700}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;justify-content:center}
+.fact{border:1px solid var(--line);border-radius:100px;padding:9px 18px;font-size:var(--t-label);font-weight:700;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--muted)}
+.fact b{color:var(--paper);font-weight:700}
+.hero-cta{margin-top:30px}
+.heroshot{position:relative;margin-top:clamp(34px,4.5vw,58px);border-radius:clamp(14px,1.6vw,22px);overflow:hidden;aspect-ratio:16/9;background:#161615;box-shadow:0 30px 90px rgba(0,0,0,.55)}
+.heroshot img{width:100%;height:100%;object-fit:cover;object-position:center 46%}
+.heroshot .grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.92) 4%,rgba(10,10,10,.25) 42%,transparent 70%)}
+.heroshot .names{position:absolute;left:0;right:0;bottom:0;padding:clamp(18px,3vw,30px);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:6px 20px}
+.heroshot .names .lb{font-size:var(--t-label);font-weight:700;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--orange);width:100%}
+.heroshot .names .nm{font-family:var(--mont);font-weight:800;font-size:clamp(16px,2.1vw,24px);letter-spacing:-.02em}
+.heroshot .names .sep{color:var(--muted)}
+
+/* ---------- bandeau statut candidatures ---------- */
+.statusbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0}
+.statusbar-in{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 22px;text-align:center}
+.statusbar .lb{font-size:var(--t-label);font-weight:600;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--muted)}
+.cd{display:flex;gap:14px;font-family:var(--mont);font-weight:800}
+.cd u{text-decoration:none;font-family:var(--display);font-weight:800;font-size:var(--t-lead);color:var(--orange);letter-spacing:-.02em}
+.cd u i{font-style:normal;font-size:var(--t-label);color:var(--muted);margin-left:3px;letter-spacing:.06em}
+
+/* ---------- cartes transformations ---------- */
+.tcards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.6vw,30px);margin-top:clamp(40px,5vw,62px);align-items:stretch}
+.tcard{background:var(--card);border:1px solid var(--cardline);border-radius:18px;overflow:hidden;box-shadow:0 6px 26px rgba(10,10,10,.07);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.tcard:hover{transform:translateY(-3px);box-shadow:0 14px 42px rgba(10,10,10,.13)}
+.tcard .im{aspect-ratio:4/3;overflow:hidden;background:#1a1a19}
+.tcard .im img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.tcard:hover .im img{transform:scale(1.04)}
+.tcard .bd{padding:clamp(24px,2.6vw,32px);display:flex;flex-direction:column;flex:1}
+.tcard .hd{display:flex;gap:14px;align-items:flex-start}
+.tcard .ic{flex:none;width:30px;height:30px;color:var(--orange)}
+.tcard h3{font-size:var(--t-title);line-height:1.26}
+.tcard p{color:var(--muted);font-size:var(--t-body);line-height:1.6;margin-top:16px}
+.diff{margin:clamp(52px,6vw,84px) auto 0;border-top:2px solid var(--orange);padding-top:clamp(26px,3vw,36px);max-width:720px;text-align:center}
+.diff h3{font-size:var(--t-lead)}
+.diff p{color:var(--muted);font-size:var(--t-body);margin:16px auto 0;max-width:62ch}
+
+/* ---------- deux colonnes titre / contenu ---------- */
+.split{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(30px,5vw,80px);align-items:start}
+.split .sticky-t{position:sticky;top:96px}
+
+/* ---------- titre de section centré ---------- */
+.chead{text-align:center;max-width:1000px;margin:0 auto}
+.chead h2{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:-.012em;font-size:var(--t-sect);line-height:1.14;text-wrap:balance}
+.chead .date{font-size:var(--t-label);font-weight:600;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--muted);margin-top:14px}
+.chead .intro{margin:20px auto 0;text-align:center}
+.chead .chl{font-family:var(--mont);font-weight:800;letter-spacing:-.02em;font-size:var(--t-lead);margin-top:16px;line-height:1.22;text-wrap:balance}
+
+/* ---------- programme : horaires, rail, cartes aérées ---------- */
+.tl{max-width:1080px;margin:clamp(38px,4.4vw,56px) auto 0}
+.tlrow{display:grid;grid-template-columns:172px 36px minmax(0,1fr);align-items:stretch}
+.tlwhen{text-align:right;padding:30px 0 0}
+.tltime{font-family:var(--display);font-weight:800;font-size:var(--t-lead);line-height:1.18;letter-spacing:-.02em}
+.tlper{font-size:var(--t-label);font-weight:600;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--muted);margin-top:10px;line-height:1.5}
+.tlrail{position:relative}
+.tlrail::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line);transform:translateX(-50%)}
+.tlrow:first-child .tlrail::before{top:38px}
+.tlrow:last-child .tlrail::before{bottom:calc(100% - 38px)}
+/* le rail se remplit au fil du scroll */
+.tlrail::after{content:"";position:absolute;left:50%;top:0;width:1px;height:0;background:var(--orange);transform:translateX(-50%);transition:height .55s cubic-bezier(.3,.7,.3,1)}
+.tlrow:first-child .tlrail::after{top:38px}
+.tlrail::after{height:var(--fill,0)}
+.tlrow:first-child .tlrail::after{height:calc(var(--fill,0) - 38px)}
+
+.tlrow:last-child .tlrail::after{display:none}
+.tldot{position:absolute;left:50%;top:38px;width:10px;height:10px;border-radius:50%;background:#4b4b49;transform:translate(-50%,-50%);box-shadow:0 0 0 5px var(--bg);transition:background .35s,box-shadow .35s}
+.tlrow.done .tldot,.tlrow.active .tldot{background:var(--orange);box-shadow:0 0 0 5px var(--bg),0 0 0 8px rgba(255,91,20,.18)}
+.tlrow.done .tltime,.tlrow.active .tltime{color:var(--orange)}
+.tltime{transition:color .35s}
+.tlcard{background:var(--card);border:1px solid var(--cardline);box-shadow:var(--cardshadow);border-radius:16px;padding:clamp(26px,2.8vw,34px) clamp(28px,3vw,38px);margin-bottom:18px}
+.tlcard ul{margin:0;padding:0;list-style:none}
+.tlcard li{position:relative;padding-left:28px;font-size:var(--t-body);line-height:1.5;color:var(--fg)}
+.tlcard li+li{margin-top:26px}
+.tlcard li::before{content:"";position:absolute;left:4px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--muted)}
+
+/* bande CTA : centrée, alignée sur la largeur des séquences */
+.ctaband{text-align:center;margin-top:clamp(46px,5.5vw,72px);padding-top:clamp(34px,4vw,48px);border-top:1px solid var(--line)}
+.ctaband>.wrap{max-width:1000px}
+.ctaband .btn{min-width:min(320px,100%)}
+
+/* ---------- intervenants : deux profils côte à côte ---------- */
+.spx{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.2vw,26px);margin-top:clamp(38px,4.5vw,58px)}
+.spx-card{background:var(--card);border:1px solid var(--cardline);box-shadow:var(--cardshadow);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.spx-photo{position:relative;aspect-ratio:5/4;overflow:hidden;background:linear-gradient(160deg,var(--orange) 0%,#b83806 45%,#141412 100%);clip-path:polygon(5% 0,100% 0,95% 100%,0 100%)}
+.spx-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.12) brightness(.94);mix-blend-mode:luminosity}
+.spx-body{padding:clamp(22px,2.4vw,30px);display:flex;flex-direction:column;flex:1}
+.spx-name{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.spx-name h3{font-size:var(--t-title);text-transform:uppercase;letter-spacing:-.01em}
+.spx-li{display:grid;place-items:center;width:22px;height:22px;border-radius:4px;background:#0a66c2;color:#fff;font-family:var(--mont);font-weight:800;font-size:11px;text-decoration:none}
+.spx-role{font-size:var(--t-label);font-weight:700;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--orange);margin:12px 0 16px}
+.spx-body p{color:var(--muted);font-size:var(--t-sm);margin-top:12px}
+.spx-body p:first-of-type{margin-top:0}
+.spx-stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:auto;padding-top:22px;border-top:1px solid var(--line)}
+.spx-stats div{padding:0 14px;border-left:1px solid var(--line)}
+.spx-stats div:first-child{padding-left:0;border-left:0}
+.spx-stats .n{font-family:var(--display);font-weight:800;letter-spacing:-.03em;font-size:var(--t-lead);letter-spacing:-.03em;line-height:1.1}
+.spx-stats .l{font-size:var(--t-label);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:7px;line-height:1.35}
+.ultrabloc{margin-top:clamp(44px,5vw,70px);border-top:1px solid var(--line);padding-top:clamp(26px,3vw,36px);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);align-items:start}
+.ultrabloc p{color:var(--muted);font-size:var(--t-body);margin-top:14px}
+
+/* ---------- et après la journée : composition asymétrique ---------- */
+.after{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(34px,5.5vw,86px);align-items:start;text-align:left}
+.after-h{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:-.015em;font-size:var(--t-sect);line-height:1.12;margin-top:16px}
+.after-l .intro{margin-top:18px;max-width:46ch}
+.stmt{margin-top:clamp(28px,3.2vw,40px);border-left:3px solid var(--orange);padding:6px 0 6px 22px;font-family:var(--display);font-weight:700;font-size:var(--t-title);line-height:1.5;color:var(--fg);max-width:46ch}
+.steps4{list-style:none;margin:0;padding:0}
+.s4{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(18px,2.2vw,30px);padding:clamp(24px,2.6vw,32px) 0;border-top:1px solid var(--line);align-items:start}
+.s4:first-child{border-top:0;padding-top:0}
+.s4 .n{font-family:var(--display);font-weight:800;font-size:clamp(36px,4.4vw,58px);line-height:.82;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px var(--ghost);min-width:1.9em}
+.s4.on .n{-webkit-text-stroke-color:var(--orange)}
+.s4 h4{font-size:var(--t-title);line-height:1.25}
+.s4 p{color:var(--muted);font-size:var(--t-sm);margin-top:10px;max-width:48ch}
+
+/* ---------- pour toi / pas pour toi ---------- */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,28px);margin-top:clamp(36px,4vw,56px)}
+.fitcol{border:1px solid var(--cardline);box-shadow:var(--cardshadow);border-radius:14px;padding:clamp(24px,3vw,32px);background:var(--card)}
+.fitcol h3{font-size:var(--t-title);margin-bottom:20px}
+.fitcol ul{margin:0;padding:0;list-style:none}
+.fitcol li{position:relative;padding:12px 0 12px 30px;border-top:1px solid var(--line);font-size:var(--t-sm);color:var(--muted)}
+.fitcol li:first-child{border-top:0}
+.fitcol li::before{position:absolute;left:0;top:13px;font-family:var(--mont);font-weight:800;font-size:var(--t-micro)}
+.fitcol.yes li::before{content:"✓";color:var(--orange)}
+.fitcol.no li::before{content:"✕";color:var(--muted)}
+
+/* ---------- formulaire ---------- */
+.formcard{border:1px solid var(--cardline);border-radius:16px;background:var(--card);padding:clamp(24px,3.4vw,44px);margin-top:clamp(34px,4vw,50px)}
+.prog{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+.prog .bar{flex:1;height:3px;background:var(--line);border-radius:2px;overflow:hidden}
+.prog .fill{height:100%;background:var(--orange);width:33.33%;transition:width .35s cubic-bezier(.2,.7,.3,1)}
+.prog .lb{font-size:var(--t-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.fstep[hidden]{display:none}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.f{display:flex;flex-direction:column;gap:8px}
+.f.full{grid-column:1/-1}
+label{font-size:var(--t-label);letter-spacing:.04em;color:var(--muted);font-weight:600}
+label .req{color:var(--orange)}
+input,select,textarea{background:rgba(125,125,125,.07);border:1px solid var(--line);border-radius:8px;padding:14px 15px;color:var(--fg);font-family:var(--inter);font-size:var(--t-sm);width:100%;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--orange);box-shadow:0 0 0 3px rgba(255,91,20,.14)}
+input[aria-invalid="true"],select[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:#ff5252}
+textarea{resize:vertical;min-height:104px}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 19px) calc(1.2em),calc(100% - 14px) calc(1.2em);background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+.err{color:#ff6b6b;font-size:var(--t-micro);min-height:1em}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:var(--t-sm);color:var(--muted)}
+.check input{width:18px;height:18px;flex:none;margin-top:2px;accent-color:var(--orange)}
+.factions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;align-items:center}
+.formstate{margin-top:16px;font-size:var(--t-sm)}
+.formstate.ok{color:var(--orange)}
+.formstate.ko{color:#ff6b6b}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.done h3{font-size:var(--t-lead)}
+.done p{color:var(--muted);font-size:var(--t-body);margin-top:14px}
+
+footer{background:var(--ink);color:#77776f;border-top:1px solid rgba(245,245,240,.10);padding:44px 0;font-size:var(--t-micro)}
+.foot{display:flex;flex-wrap:wrap;gap:14px 26px;justify-content:space-between;align-items:center}
+.foot a{color:#9d9d98;text-decoration:underline;text-underline-offset:3px}
+.foot a:hover{color:var(--paper)}
+
+.stickycta{position:fixed;left:0;right:0;bottom:0;z-index:70;padding:10px var(--pad) calc(10px + env(safe-area-inset-bottom));background:rgba(10,10,10,.94);backdrop-filter:blur(12px);border-top:1px solid rgba(245,245,240,.12);display:none}
+.stickycta .btn{width:100%;padding:15px;font-size:var(--t-sm)}
+
+
+/* ---------- FAQ ---------- */
+.faq{max-width:860px;margin:clamp(34px,4vw,50px) auto 0;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 46px 22px 0;font-family:var(--display);font-weight:800;font-size:var(--t-title);line-height:1.3;position:relative;transition:color .2s}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:8px;top:50%;width:13px;height:13px;margin-top:-6px;background:
+  linear-gradient(var(--orange),var(--orange)) center/13px 1.5px no-repeat,
+  linear-gradient(var(--orange),var(--orange)) center/1.5px 13px no-repeat;transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(135deg)}
+.faq summary:hover{color:var(--orange)}
+.faq details p{color:var(--muted);font-size:var(--t-body);line-height:1.6;padding:0 46px 24px 0;max-width:72ch}
+
+/* ---------- boutons : flèche qui glisse ---------- */
+.btn .arw{display:inline-block;margin-left:2px;transition:transform .25s}
+.btn:hover .arw{transform:translateX(4px)}
+.btn-lg{padding:21px 40px;font-size:16px}
+
+/* ---------- interactions ---------- */
+.readbar{position:fixed;top:0;left:0;height:2px;width:0;background:var(--orange);z-index:90;pointer-events:none;transition:width .12s linear}
+.heroglow{position:absolute;inset:0;pointer-events:none;z-index:1;opacity:0;transition:opacity .5s;background:radial-gradient(420px circle at var(--mx,50%) var(--my,30%),rgba(255,120,50,.16),transparent 62%)}
+.hero:hover .heroglow{opacity:1}
+.heroshot img{will-change:transform}
+.js .rv.stagger{opacity:1;transform:none}
+.js .stagger>*{opacity:0;transform:translateY(15px);transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1)}
+.js .stagger.in>*{opacity:1;transform:none}
+.js .stagger.in>*:nth-child(2){transition-delay:.1s}
+.js .stagger.in>*:nth-child(3){transition-delay:.2s}
+.js .stagger.in>*:nth-child(4){transition-delay:.3s}
+.js .stagger.in>*:nth-child(5){transition-delay:.4s}
+.js .stagger.in>*:nth-child(6){transition-delay:.5s}
+.js .stagger.in>*:nth-child(7){transition-delay:.6s}
+.js .stagger.in>*:nth-child(8){transition-delay:.7s}
+.btn{will-change:transform}
+.totop{position:fixed;right:22px;bottom:22px;z-index:75;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong,rgba(245,245,240,.2));background:rgba(10,10,10,.82);backdrop-filter:blur(10px);color:var(--paper);display:grid;place-items:center;cursor:pointer;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .3s,transform .3s,background .2s}
+.totop.on{opacity:1;transform:none;pointer-events:auto}
+.totop:hover{background:var(--orange);color:#0a0a0a;border-color:var(--orange)}
+.f.ok input,.f.ok select,.f.ok textarea{border-color:rgba(255,91,20,.45)}
+.f{position:relative}
+.f.ok::after{content:"✓";position:absolute;right:14px;top:34px;color:var(--orange);font-size:13px;font-weight:700;pointer-events:none}
+.f.full.ok::after{top:34px}
+.spin{display:inline-block;width:15px;height:15px;border:2px solid rgba(10,10,10,.28);border-top-color:#0a0a0a;border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px;margin-right:8px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .65s cubic-bezier(.2,.7,.3,1),transform .65s cubic-bezier(.2,.7,.3,1)}
+.js .rv.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .split,.ultrabloc,.spx,.after{grid-template-columns:1fr}
+  .tlrow{grid-template-columns:1fr}
+  .tlwhen{text-align:left;padding:0 0 14px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .tlper{margin-top:0}
+  .tlrail{display:none}
+  .split .sticky-t{position:static}
+  .tcards{grid-template-columns:1fr}
+  .tcard:nth-child(2),.tcard:nth-child(3){transform:none}
+  .path{grid-template-columns:1fr 1fr}
+  .fit{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .fgrid{grid-template-columns:1fr}
+  .path{grid-template-columns:1fr}
+  .stickycta{display:block}
+  body{padding-bottom:70px}
+  .heroshot{aspect-ratio:4/3}
+  .btn{width:100%}
+  .top .btn{width:auto}
+  .factions .btn{width:auto;flex:1}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+
+<div class="readbar" id="readbar"></div>
+
+<header class="top"><div class="wrap top-in">
+  <a class="logo" href="#top">ULTRA<span class="dot">.</span></a>
+  <a class="btn" href="#candidature" data-cta="header">Candidater</a>
+</div></header>
+
+<!-- 1 · HERO -->
+<!-- 1 . HERO -->
+<section class="s-dark hero" id="top"><div class="wrap">
+  <figure class="heroshot">
+    <img src="/assets/img1_opt.webp" alt="Table ronde ULTRA Live réunissant les intervenants devant les participants" fetchpriority="high">
+  </figure>
+  <h1>Tu sais vendre. Mais est&#8209;ce que tu <em>t'entraînes</em> pour devenir <em class="o">exceptionnel</em>&#8239;?</h1>
+    <p class="sub">Une journée intensive pour confronter tes méthodes, identifier les détails qui limitent encore tes performances et élever ton niveau aux côtés de <b>Marvin Ndiaye</b> et des équipes ULTRA. Les profils qui se distinguent pourront poursuivre le processus pour <u>rejoindre la Sales Team ULTRA</u>.</p>
+  <div class="hero-cta"><a class="btn btn-lg" href="#candidature" data-cta="hero">Candidater<span class="arw">→</span></a></div>
+</div>
+<div class="wrap hero-in hero-below">
+  <p class="eyebrow">Pour les sales qui visent l'excellence <span class="o">·</span> Gratuit <span class="o">·</span> Sur candidature</p>
+  <div class="facts" id="facts"></div>
+</div></section>
+
+<!-- 2 . PROFIL RECHERCHE -->
+<section class="s-light sect" id="profil"><div class="wrap">
+  <div class="chead rv">
+    <h2>Le profil que nous <em>recherchons</em></h2>
+    <p class="chl">Cette journée est-elle faite pour toi&#8239;?</p>
+  </div>
+  <div class="fit rv stagger">
+    <div class="fitcol yes">
+      <h3>Cette journée est faite pour toi si…</h3>
+      <ul>
+        <li>Tu as déjà vendu et tu veux passer d'un bon niveau à un niveau d'excellence.</li>
+        <li>Tu connais la réalité des objectifs commerciaux et de la pression du résultat.</li>
+        <li>Tu veux confronter tes méthodes à des situations et à des interlocuteurs exigeants.</li>
+        <li>Tu acceptes d'être challengé et de recevoir des retours directs.</li>
+        <li>Tu souhaites potentiellement rejoindre une équipe commerciale ambitieuse.</li>
+      </ul>
+    </div>
+    <div class="fitcol no">
+      <h3>Cette journée n'est pas faite pour toi si…</h3>
+      <ul>
+        <li>Tu veux découvrir les bases de la vente ou simplement apprendre le métier de commercial.</li>
+        <li>Tu n'as encore jamais été confronté à de véritables objectifs commerciaux.</li>
+        <li>Tu n'es pas disponible pendant l'intégralité de la journée.</li>
+        <li>Tu attends une place garantie dans l'équipe sans démontrer ton potentiel.</li>
+        <li>Tu refuses les mises en situation, la remise en question ou le feedback direct.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- 7 . CANDIDATURE -->
+<section class="s-dark sect" id="candidature"><div class="wrap narrow">
+  <div class="chead rv">
+    <h2>Candidature</h2>
+    <p class="chl">Ta candidature commence ici.</p>
+    <p class="intro">La journée est gratuite, mais les places sont limitées à <span id="maxP">100</span> participants. Réponds simplement et sincèrement&#8239;: chaque candidature est étudiée par l'équipe ULTRA.</p>
+  </div>
+  <div class="facts rv" id="factsForm" style="margin-top:26px"></div>
+  </div>
+
+  <div class="formcard rv">
+    <div id="formDone" class="done" hidden>
+      <h3>Candidature reçue.</h3>
+      <p>Merci. L'équipe ULTRA va maintenant étudier ton profil. Si ta candidature est retenue, tu seras contacté avec les prochaines étapes et les informations pratiques de la journée.</p>
+    </div>
+
+    <div id="formNotEligible" class="done" hidden>
+      <h3>Merci pour ta candidature.</h3>
+      <p>Sur ces critères, on ne peut pas te proposer de poursuivre le processus pour cette session. N'hésite pas à retenter une prochaine fois si ta situation change.</p>
+    </div>
+
+    <form id="applyForm" novalidate>
+      <div class="prog" aria-hidden="true">
+        <span class="lb" id="progLabel">Étape 1 / 4</span>
+        <span class="bar"><span class="fill" id="progFill"></span></span>
+      </div>
+
+      <!-- Étape 1 -->
+      <fieldset class="fstep" data-step="1" style="border:0;padding:0;margin:0">
+        <legend class="sr">Tes coordonnées</legend>
+        <h3 style="margin-bottom:22px">Tes coordonnées</h3>
+        <div class="fgrid">
+          <div class="f"><label for="firstName">Prénom <span class="req">*</span></label><input id="firstName" name="firstName" type="text" autocomplete="given-name" required><span class="err" data-for="firstName"></span></div>
+          <div class="f"><label for="lastName">Nom <span class="req">*</span></label><input id="lastName" name="lastName" type="text" autocomplete="family-name" required><span class="err" data-for="lastName"></span></div>
+          <div class="f"><label for="email">Adresse e-mail <span class="req">*</span></label><input id="email" name="email" type="email" autocomplete="email" required><span class="err" data-for="email"></span></div>
+          <div class="f"><label for="phone">Numéro de téléphone <span class="req">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" required><span class="err" data-for="phone"></span></div>
+          <div class="f"><label for="city">Ville de résidence <span class="req">*</span></label><input id="city" name="city" type="text" autocomplete="address-level2" required><span class="err" data-for="city"></span></div>
+          <div class="f"><label for="social">Lien LinkedIn ou Instagram <span style="text-transform:none;letter-spacing:0">(facultatif)</span></label><input id="social" name="social" type="url" placeholder="https://"><span class="err" data-for="social"></span></div>
+        </div>
+      </fieldset>
+
+      <!-- Étape 2 -->
+      <fieldset class="fstep" data-step="2" hidden style="border:0;padding:0;margin:0">
+        <legend class="sr">Conditions de participation</legend>
+        <h3 style="margin-bottom:22px">Conditions de participation</h3>
+        <div class="fgrid">
+          <div class="f full"><label for="ageRange">Quel âge as-tu ? <span class="req">*</span></label>
+            <select id="ageRange" name="ageRange" required>
+              <option value="">Choisir…</option>
+              <option>Moins de 18 ans</option><option>18-24 ans</option><option>25-34 ans</option><option>35-44 ans</option><option>45-54 ans</option><option>55 ans ou plus</option>
+            </select><span class="err" data-for="ageRange"></span></div>
+          <div class="f full"><label for="expCommerciale">Quelle est ton expérience commerciale ? <span class="req">*</span></label>
+            <select id="expCommerciale" name="expCommerciale" required>
+              <option value="">Choisir…</option>
+              <option>Aucune expérience commerciale</option><option>Moins d'un an</option><option>1 à 3 ans</option><option>3 à 5 ans</option><option>Plus de 5 ans</option>
+            </select><span class="err" data-for="expCommerciale"></span></div>
+          <div class="f full"><label for="dispoParis" id="dispoParisLabel">Peux-tu venir à Paris pour une demi-journée de formation ? <span class="req">*</span></label>
+            <select id="dispoParis" name="dispoParis" required><option value="">Choisir…</option><option>Oui</option><option>Non</option></select><span class="err" data-for="dispoParis"></span></div>
+          <div class="f full"><label for="dispoBootcamp">Les profils qui se distingueront seront conviés à deux jours de bootcamp de formation à Paris, avec la possibilité de rejoindre la Sales Team ULTRA. Es-tu disponible ? <span class="req">*</span></label>
+            <select id="dispoBootcamp" name="dispoBootcamp" required><option value="">Choisir…</option><option>Oui</option><option>Non</option></select><span class="err" data-for="dispoBootcamp"></span></div>
+        </div>
+      </fieldset>
+
+      <!-- Étape 3 -->
+      <fieldset class="fstep" data-step="3" hidden style="border:0;padding:0;margin:0">
+        <legend class="sr">Ta vision</legend>
+        <h3 style="margin-bottom:22px">Ta vision</h3>
+        <div class="fgrid">
+          <div class="f full"><label for="attentes">Personnellement, qu'attends-tu de cette journée ? <span class="req">*</span></label>
+            <textarea id="attentes" name="attentes" required></textarea><span class="err" data-for="attentes"></span></div>
+          <div class="f full"><label for="ambition">Quelle est ton ambition dans les deux prochaines années ? <span class="req">*</span></label>
+            <textarea id="ambition" name="ambition" required></textarea><span class="err" data-for="ambition"></span></div>
+        </div>
+      </fieldset>
+
+      <!-- Étape 4 -->
+      <fieldset class="fstep" data-step="4" hidden style="border:0;padding:0;margin:0">
+        <legend class="sr">Ton expérience commerciale</legend>
+        <h3 style="margin-bottom:22px">Ton expérience commerciale</h3>
+        <div class="fgrid">
+          <div class="f full"><label for="difficile">Qu'est-ce qui est le plus dur pour toi dans le métier de commercial ? <span class="req">*</span></label>
+            <textarea id="difficile" name="difficile" required></textarea><span class="err" data-for="difficile"></span></div>
+          <div class="f full"><label for="result">Décris ton meilleur résultat commercial : donne les chiffres et raconte-nous comment ça s'est passé. <span class="req">*</span></label>
+            <textarea id="result" name="result" required></textarea><span class="err" data-for="result"></span></div>
+          <div class="f full"><label for="differenciant">Quel est ton unfair advantage ? Pourquoi on devrait te sélectionner toi ? <span class="req">*</span></label>
+            <textarea id="differenciant" name="differenciant" required></textarea><span class="err" data-for="differenciant"></span></div>
+          <div class="f full">
+            <label class="check"><input id="consent" name="consent" type="checkbox" required>
+            <span>J'accepte que mes réponses soient traitées par ULTRA dans le cadre de cette sélection. <a id="privacyLink" href="#" target="_blank" rel="noopener">Politique de confidentialité</a>. <span class="req">*</span></span></label>
+            <span class="err" data-for="consent"></span>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="hp" aria-hidden="true"><label for="company_website">Ne pas remplir</label><input id="company_website" name="company_website" type="text" tabindex="-1" autocomplete="off"></div>
+
+      <div class="factions">
+        <button type="button" class="btn btn-ghost" id="btnPrev" hidden>Retour</button>
+        <button type="button" class="btn" id="btnNext">Continuer</button>
+        <button type="submit" class="btn" id="btnSubmit" hidden>Envoyer ma candidature</button>
+      </div>
+      <p class="formstate" id="formState" role="status" aria-live="polite"></p>
+      <p class="micro">Quelques minutes suffisent. Tes réponses resteront confidentielles et seront uniquement utilisées dans le cadre de cette sélection.</p>
+    </form>
+  </div>
+</div></section>
+
+<!-- 3 . PROGRAMME DE LA JOURNEE -->
+<section class="s-dark sect" id="programme"><div class="wrap">
+  <div class="chead rv">
+    <h2>Le programme de la journée</h2>
+    <p class="date" id="progDate"></p>
+    <p class="chl">Une journée pour confronter ta méthode à la réalité du terrain.</p>
+    <p class="intro">Chaque séquence confronte tes acquis, affine tes réflexes et t'expose aux exigences qui distinguent un bon sales d'un excellent.</p>
+  </div>
+  <div class="tl rv stagger">
+    <div class="tlrow" data-i="0">
+      <div class="tlwhen"><div class="tltime"></div><div class="tlper">Comprendre et affûter sa méthode</div></div>
+      <div class="tlrail"><span class="tldot"></span></div>
+      <div><div class="tlcard"><ul><li>Découvrir le projet Sales Team et l'ambition portée par ULTRA.</li><li>Comprendre pourquoi certaines ventes avancent et pourquoi d'autres échouent.</li><li>Apprendre à créer de l'intérêt et obtenir un échange avec un prospect qui ne t'attend pas.</li><li>Identifier le véritable besoin du prospect et ce qui influence la décision.</li><li>Structurer un message clair et convaincant sans dépendre d'un script.</li></ul></div></div>
+    </div>
+    <div class="tlrow" data-i="1">
+      <div class="tlwhen"><div class="tltime"></div><div class="tlper">Déjeuner et échanges</div></div>
+      <div class="tlrail"><span class="tldot"></span></div>
+      <div><div class="tlcard"><ul><li>Déjeuner sur place avec les participants et les intervenants.</li></ul></div></div>
+    </div>
+    <div class="tlrow" data-i="2">
+      <div class="tlwhen"><div class="tltime"></div><div class="tlper">Role-plays et challenges</div></div>
+      <div class="tlrail"><span class="tldot"></span></div>
+      <div><div class="tlcard"><ul><li>Comprendre rapidement une entreprise et apporter de la valeur avant de chercher à vendre.</li><li>Mener un échange commercial, comprendre la situation et obtenir une prochaine étape.</li><li>Adapter son approche face au refus, aux objections et à un interlocuteur difficile.</li><li>Construire une réponse commerciale en équipe et défendre ses choix.</li></ul></div></div>
+    </div>
+    <div class="tlrow" data-i="3">
+      <div class="tlwhen"><div class="tltime"></div><div class="tlper">Pitch final et feedback</div></div>
+      <div class="tlrail"><span class="tldot"></span></div>
+      <div><div class="tlcard"><ul><li>Présenter son analyse, défendre son approche et convaincre.</li><li>Identifier ses points forts et les compétences à renforcer.</li><li>Découvrir les prochaines étapes possibles pour les profils sélectionnés.</li></ul></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 4 . INTERVENANTS -->
+<section class="s-light sect" id="intervenants"><div class="wrap">
+  <div class="chead rv">
+    <h2>Tes intervenants</h2>
+    <p class="chl">Ils ne parlent pas de vente en théorie.</p>
+    <p class="intro">Tu seras accompagné par des entrepreneurs et des professionnels qui ont vendu, construit des équipes et développé des entreprises dans le monde réel.</p>
+  </div>
+  <div id="speakers"></div>
+  <div class="ultrabloc rv">
+    <h3>ULTRA, un écosystème construit dans le réel</h3>
+    <div>
+      <p>ULTRA accompagne plusieurs centaines de dirigeants de TPE et PME en France et en Belgique sur leurs enjeux de croissance, de vente, d'organisation et d'exécution.</p>
+      <p>ULTRA Sales Day prolonge cette exigence auprès de celles et ceux qui veulent devenir d'excellents commerciaux et représenter des entreprises sur le terrain.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- 5 . POURQUOI SE FORMER -->
+<section class="s-light sect" id="transformations"><div class="wrap">
+  <div class="chead rv">
+    <h2>Passer du bon niveau à <em class="o">l’excellence</em></h2>
+    <p class="chl">Les meilleurs sales n'arrêtent jamais de se former.</p>
+    <p class="intro">Tu connais ton offre, tu sais mener une conversation et tu as déjà obtenu des résultats. Mais pour devenir exceptionnel, répéter ce que tu sais déjà faire ne suffit plus. Il faut analyser tes décisions, révéler tes angles morts et te confronter à des standards plus élevés.</p>
+  </div>
+  <div class="tcards rv stagger">
+    <article class="tcard">
+      <div class="im"><img src="/assets/img2_opt.webp" alt="Échange de travail entre participants lors d'un événement ULTRA" loading="lazy"></div>
+      <div class="bd"><div class="hd"><svg class="ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="14" r="8.5"/><path d="M20.2 20.2 28 28"/><path d="M10.5 15.5v-3M14 17V11M17.5 15.5v-2"/></svg><h3>Repère ce qui te coûte encore des ventes</h3></div>
+      <p>Identifie les automatismes, les signaux manqués et les angles morts qui plafonnent tes performances, même lorsque tes résultats sont déjà bons.</p></div>
+    </article>
+    <article class="tcard">
+      <div class="im"><img src="/assets/img3_opt.webp" alt="Prise de parole au micro pendant une session ULTRA" loading="lazy"></div>
+      <div class="bd"><div class="hd"><svg class="ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="6.5"/><circle cx="16" cy="16" r="1.6" fill="currentColor" stroke="none"/></svg><h3>Fais la différence sur les ventes difficiles</h3></div>
+      <p>Travaille ta lecture de la décision, ton timing, ta posture et ta capacité à rester précis lorsque les enjeux et les résistances augmentent.</p></div>
+    </article>
+    <article class="tcard">
+      <div class="im"><img src="/assets/img4_opt.webp" alt="Table ronde ULTRA Live réunissant plusieurs intervenants" loading="lazy"></div>
+      <div class="bd"><div class="hd"><svg class="ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 27h8v-7H3zM12 27h8V13h-8zM21 27h8V6h-8z"/><path d="M4.5 12l6-5.5 4.5 3L27 3"/><path d="M22.5 3H27v4.5"/></svg><h3>Confronte ton niveau à des standards plus élevés</h3></div>
+      <p>Mesure-toi à d'autres sales ambitieux et aux exigences portées par Marvin et ULTRA. Sors de la journée avec une cartographie claire de tes forces, de tes angles morts et de ce qu'il te manque pour passer au niveau supérieur.</p></div>
+    </article>
+  </div>
+  <div class="diff rv">
+    <h3>Pas une initiation. Un accélérateur pour sales ambitieux.</h3>
+    <p>On ne va pas t'expliquer ce qu'est un pitch, une objection ou un closing. Tu vas travailler les compétences qui font la différence à haut niveau : lecture du contexte, finesse d'écoute, capacité d'adaptation, maîtrise de la décision et exécution sous pression.</p>
+  </div>
+</div></section>
+
+<!-- 6 . ET APRES -->
+<section class="s-dark sect" id="suite"><div class="wrap">
+  <div class="after">
+    <div class="after-l rv">
+      <p class="eyebrow">Et après la journée&#8239;?</p>
+      <h2 class="after-h">Et si cette journée ouvrait <em class="o">la suite</em>&#8239;?</h2>
+      <p class="intro">ULTRA construit une équipe commerciale capable de représenter et de développer les offres de son écosystème sur le terrain.</p>
+      <p class="intro">À l'issue de la journée, les profils qui se seront distingués pourront être invités à poursuivre le processus de sélection pour rejoindre la Sales Team ULTRA. Les modalités de la suite seront présentées directement aux personnes concernées.</p>
+      <p class="stmt">La participation à la journée ne garantit pas une place dans l'équipe. Ce sont ton engagement, ta progression et ton exécution pendant la journée qui feront la différence.</p>
+    </div>
+    <ol class="steps4 rv stagger">
+      <li class="s4 on"><span class="n">01</span><div><h4>Journée de formation immersive</h4></div></li>
+      <li class="s4"><span class="n">02</span><div><h4>Sélection des meilleurs profils</h4></div></li>
+      <li class="s4"><span class="n">03</span><div><h4>Possibilité d'intégrer la Sales Team ULTRA</h4></div></li>
+    </ol>
+  </div>
+</div></section>
+
+<!-- 8 . FAQ -->
+<section class="s-light sect" id="faq"><div class="wrap">
+  <div class="chead rv">
+    <h2>Questions fréquentes</h2>
+  </div>
+  <div class="faq rv stagger">
+    <details><summary>À qui s'adresse cette journée&#8239;?</summary><p>Aux sales qui possèdent déjà une expérience concrète de la vente et qui souhaitent améliorer leur méthode, se confronter à des situations réelles et passer au niveau supérieur.</p></details>
+    <details><summary>Est-ce une formation pour débutants&#8239;?</summary><p>Non. Les bases de la vente ne seront pas reprises. La journée est conçue pour des commerciaux déjà opérationnels, prêts à pratiquer et à être challengés.</p></details>
+    <details><summary>La participation est-elle gratuite&#8239;?</summary><p>Oui. La journée est entièrement gratuite, mais le nombre de places est limité et la participation se fait sur candidature.</p></details>
+    <details><summary>Comment les participants sont-ils sélectionnés&#8239;?</summary><p>Chaque candidature est étudiée par l'équipe ULTRA. Les profils retenus recevront ensuite une confirmation avec toutes les informations pratiques.</p></details>
+    <details><summary>Participer garantit-il une place dans la Sales Team ULTRA&#8239;?</summary><p>Non. Les profils qui se distingueront pendant la journée pourront être invités à poursuivre le processus de sélection avec ULTRA.</p></details>
+  </div>
+</div>
+</section>
+
+
+
+<footer><div class="wrap foot">
+  <a class="logo" href="#top" style="font-size:17px">ULTRA<span class="dot">.</span></a>
+  <nav><a id="legalLink" href="#">Mentions légales</a> · <a id="privacyLink2" href="#">Politique de confidentialité</a></nav>
+  <span>© <span id="year"></span> ULTRA</span>
+</div></footer>
+
+<button class="totop" id="totop" aria-label="Revenir en haut">↑</button>
+
+<script>
+window.eventConfig = {
+  dateLabel: "Vendredi 25 septembre 2026",
+  startTime: "13h",
+  endTime: "18h",
+  eventName: "ULTRA Sales Day",
+  maxParticipants: 100,
+  applicationEndpoint: "/api/apply"
+};
+</script>
+<script>
+(function(){
+  "use strict";
+  var C = window.eventConfig || {};
+  var $  = function(s,r){return (r||document).querySelector(s)};
+  var $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+
+  /* ---------- mesure : n'installe aucun outil, se branche sur dataLayer s'il existe ---------- */
+  function track(name, props){
+    try{
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(Object.assign({event:name}, props||{}));
+    }catch(e){}
+  }
+
+  /* ---------- UTM : capturés à l'arrivée, conservés pendant la visite ---------- */
+  var UTM_KEYS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'];
+  var utm = {};
+  (function(){
+    var stored = {};
+    try{ stored = JSON.parse(sessionStorage.getItem('ultra_utm')||'{}'); }catch(e){}
+    var q = new URLSearchParams(location.search), found = false;
+    UTM_KEYS.forEach(function(k){ if(q.get(k)){ stored[k] = q.get(k); found = true; } });
+    if(found){ try{ sessionStorage.setItem('ultra_utm', JSON.stringify(stored)); }catch(e){} }
+    utm = stored;
+  })();
+
+  /* ---------- hydratation depuis la configuration ---------- */
+  var hasDate  = !!(C.dateLabel);
+  var hasPlace = !!(C.city || C.venue);
+  var hasHours = !!(C.startTime && C.endTime);
+
+  function chip(txt, strong){ return '<span class="fact">'+(strong?'<b>'+txt+'</b>':txt)+'</span>'; }
+  function factsHTML(){
+    var out = '';
+    out += hasDate ? chip(C.dateLabel, true) : chip('Prochaine session bientôt annoncée', true);
+    if(hasPlace) out += chip([C.city, C.venue].filter(Boolean).join(' · '), true);
+    if(hasHours) out += chip(C.startTime+' — '+C.endTime, true);
+    out += chip((C.maxParticipants||100)+' places maximum');
+    return out;
+  }
+  var f1 = $('#facts'), f2 = $('#factsForm');
+  if(f1) f1.innerHTML = factsHTML();
+  if(f2) f2.innerHTML = factsHTML() + chip('Gratuit · sur candidature');
+  var mp = $('#maxP'); if(mp) mp.textContent = C.maxParticipants || 100;
+  (function(){
+    var times = C.programmeTimes || [];
+    $$('.tlrow').forEach(function(row, i){
+      var t = row.querySelector('.tltime');
+      if(!t) return;
+      t.textContent = times[i] ? times[i] : ('0' + (i+1));
+      if(!times[i]) t.style.color = 'var(--muted)';
+    });
+    var pd = $('#progDate');
+    if(pd) pd.textContent = (hasDate || hasPlace)
+      ? [C.dateLabel, C.city].filter(Boolean).join(' · ')
+      : 'Prochaine session bientôt annoncée';
+  })();
+  var al = $('#dispoParisLabel');
+  if(al && hasDate){
+    al.innerHTML = 'Peux-tu venir à Paris pour une demi-journée de formation le '+C.dateLabel+' ? <span class="req">*</span>';
+  }
+  ['#privacyLink','#privacyLink2'].forEach(function(s){ var a=$(s); if(a && C.privacyUrl) a.href = C.privacyUrl; });
+  var lg = $('#legalLink'); if(lg && C.legalUrl) lg.href = C.legalUrl;
+  var yr = $('#year'); if(yr) yr.textContent = new Date().getFullYear();
+
+  /* ---------- statut des candidatures : compte à rebours seulement si vraie date limite ---------- */
+  (function(){
+    var bar = $('#statusbar'); if(!bar) return;
+    var end = C.applicationDeadlineISO ? new Date(C.applicationDeadlineISO).getTime() : NaN;
+    var band = bar.closest('section');
+    if(!isFinite(end) || end - Date.now() <= 0){
+      if(band) band.hidden = true;   /* pas de fausse urgence, pas de bandeau */
+      return;
+    }
+    if(band) band.hidden = false;
+    bar.innerHTML = '<span class="lb">Clôture des candidatures dans</span>'
+      + '<span class="cd"><u id="kd"></u><u id="kh"></u><u id="km"></u><u id="ks"></u></span>';
+    var kd=$('#kd'),kh=$('#kh'),km=$('#km'),ks=$('#ks');
+    function pad(n){return String(Math.max(0,n)).padStart(2,'0')}
+    function tick(){
+      var r = end - Date.now();
+      if(r <= 0){ bar.innerHTML = '<span class="lb">Candidatures clôturées pour cette session</span>'; clearInterval(t); return; }
+      kd.innerHTML = pad(Math.floor(r/864e5))+'<i>J</i>';
+      kh.innerHTML = pad(Math.floor(r/36e5)%24)+'<i>H</i>';
+      km.innerHTML = pad(Math.floor(r/6e4)%60)+'<i>MN</i>';
+      ks.innerHTML = pad(Math.floor(r/1e3)%60)+'<i>S</i>';
+    }
+    tick(); var t = setInterval(tick, 1000);
+  })();
+
+  /* ---------- intervenants ---------- */
+  (function(){
+    var host = $('#speakers'); if(!host || !C.speakers) return;
+    host.className = 'spx rv stagger';
+    host.innerHTML = C.speakers.map(function(s){
+      var bio  = (s.bio||[]).map(function(p){return '<p>'+p+'</p>'}).join('');
+      var li   = s.linkedin ? '<a class="spx-li" href="'+s.linkedin+'" target="_blank" rel="noopener" aria-label="LinkedIn de '+s.name+'">in</a>' : '';
+      var st   = (s.stats||[]).map(function(x){return '<div><div class="n">'+x.n+'</div><div class="l">'+x.l+'</div></div>'}).join('');
+      var pos  = s.photoPosition ? ' style="object-position:'+s.photoPosition+'"' : '';
+      var photo = s.photo ? '<div class="spx-photo"><img src="'+s.photo+'" alt="'+s.name+'" loading="lazy"'+pos+'></div>' : '';
+      return '<article class="spx-card">'+photo+'<div class="spx-body">'
+           + '<div class="spx-name"><h3>'+s.name+'</h3>'+li+'</div>'
+           + '<div class="spx-role">'+s.role+'</div>'+bio
+           + (st ? '<div class="spx-stats">'+st+'</div>' : '')
+           + '</div></article>';
+    }).join('');
+  })();
+
+
+  /* ---------- interactions ---------- */
+  var REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var FINE = matchMedia('(pointer: fine)').matches;
+
+  /* barre de progression de lecture */
+  (function(){
+    var bar = $('#readbar'); if(!bar) return;
+    function up(){
+      var h = document.documentElement.scrollHeight - innerHeight;
+      bar.style.width = (h > 0 ? Math.min(100, scrollY / h * 100) : 0) + '%';
+    }
+    up(); addEventListener('scroll', up, {passive:true}); addEventListener('resize', up);
+  })();
+
+  /* retour en haut */
+  (function(){
+    var b = $('#totop'); if(!b) return;
+    b.addEventListener('click', function(){ scrollTo({top:0, behavior: REDUCED ? 'auto' : 'smooth'}) });
+    function up(){ b.classList.toggle('on', scrollY > 1200) }
+    up(); addEventListener('scroll', up, {passive:true});
+  })();
+
+  /* parallaxe douce sur la photo du hero + halo qui suit la souris */
+  (function(){
+    if(REDUCED) return;
+    var shot = $('.heroshot img'), hero = $('.hero'), glow = $('#heroglow');
+    if(shot){
+      shot.style.height = '114%';
+      var tick = false;
+      addEventListener('scroll', function(){
+        if(tick) return; tick = true;
+        requestAnimationFrame(function(){
+          var y = Math.min(scrollY, 900);
+          shot.style.transform = 'translateY(' + (-y * 0.055) + 'px)';
+          tick = false;
+        });
+      }, {passive:true});
+    }
+    if(hero && glow && FINE){
+      hero.addEventListener('mousemove', function(e){
+        var r = hero.getBoundingClientRect();
+        glow.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        glow.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    }
+  })();
+
+  /* boutons magnétiques */
+  (function(){
+    if(REDUCED || !FINE) return;
+    $$('.btn').forEach(function(b){
+      b.addEventListener('mousemove', function(e){
+        var r = b.getBoundingClientRect();
+        var dx = (e.clientX - (r.left + r.width/2)) / (r.width/2);
+        var dy = (e.clientY - (r.top + r.height/2)) / (r.height/2);
+        b.style.transform = 'translate(' + (dx*5).toFixed(1) + 'px,' + (dy*4).toFixed(1) + 'px)';
+      });
+      b.addEventListener('mouseleave', function(){ b.style.transform = '' });
+    });
+  })();
+
+  /* compteurs animés sur les chiffres des intervenants */
+  (function(){
+    var nums = $$('.spx-stats .n'); if(!nums.length) return;
+    var io2 = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        io2.unobserve(e.target);
+        var el = e.target, raw = el.textContent;
+        var m = raw.match(/[\d\u202f\u00a0 ]{1,}/);
+        if(!m || REDUCED) return;
+        var sep = /[\u202f\u00a0 ]/.test(m[0]) ? ' ' : '';
+        var target = parseInt(m[0].replace(/[^\d]/g,''), 10);
+        if(!isFinite(target) || target === 0) return;
+        var start = performance.now(), dur = 950;
+        function fmt(n){ return sep ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') : String(n) }
+        function step(t){
+          var k = Math.min(1, (t - start) / dur);
+          var eased = 1 - Math.pow(1 - k, 3);
+          el.textContent = raw.replace(m[0], fmt(Math.round(target * eased)));
+          if(k < 1) requestAnimationFrame(step); else el.textContent = raw;
+        }
+        el.textContent = raw.replace(m[0], fmt(0));
+        requestAnimationFrame(step);
+      });
+    }, {threshold:.4});
+    nums.forEach(function(n){ io2.observe(n) });
+  })();
+
+  /* ---------- timeline : progression au scroll ---------- */
+  (function(){
+    var rows = $$('.tlrow'); if(!rows.length) return;
+    function onScroll(){
+      var mark = innerHeight * 0.52;
+      rows.forEach(function(r, i){
+        var dot = r.querySelector('.tldot'), rail = r.querySelector('.tlrail');
+        var rr = rail.getBoundingClientRect();
+        var y = dot.getBoundingClientRect().top;
+        r.classList.toggle('active', y <= mark);
+        r.classList.toggle('done', y <= mark);
+        var pct = rr.height ? Math.max(0, Math.min(1, (mark - rr.top) / rr.height)) : 0;
+        rail.style.setProperty('--fill', (pct * 100).toFixed(1) + '%');
+      });
+    }
+    onScroll(); addEventListener('scroll', onScroll, {passive:true}); addEventListener('resize', onScroll);
+  })();
+
+  /* ---------- header révélé après le hero ---------- */
+  (function(){
+    var top = document.querySelector('header.top'), hero = document.getElementById('top');
+    if(!top || !hero) return;
+    function onScroll(){ top.classList.toggle('show', scrollY > hero.offsetHeight - 120); }
+    onScroll(); addEventListener('scroll', onScroll, {passive:true});
+  })();
+
+  /* ---------- CTA ---------- */
+  $$('[data-cta]').forEach(function(a){
+    a.addEventListener('click', function(){ track('cta_click', {cta_location: a.getAttribute('data-cta')}); });
+  });
+
+  /* ---------- formulaire multi-étapes ---------- */
+  (function(){
+    var form = $('#applyForm'); if(!form) return;
+    var steps = $$('.fstep', form), cur = 0, started = false, sending = false;
+    var btnPrev = $('#btnPrev'), btnNext = $('#btnNext'), btnSubmit = $('#btnSubmit');
+    var state = $('#formState'), fill = $('#progFill'), plabel = $('#progLabel');
+
+    function render(){
+      steps.forEach(function(s,i){ s.hidden = (i !== cur); });
+      btnPrev.hidden   = (cur === 0);
+      btnNext.hidden   = (cur === steps.length - 1);
+      btnSubmit.hidden = (cur !== steps.length - 1);
+      fill.style.width = ((cur+1)/steps.length*100) + '%';
+      plabel.textContent = 'Étape ' + (cur+1) + ' / ' + steps.length;
+    }
+    function setErr(el, msg){
+      var slot = form.querySelector('.err[data-for="'+el.id+'"]');
+      if(slot) slot.textContent = msg || '';
+      el.setAttribute('aria-invalid', msg ? 'true' : 'false');
+    }
+    function validate(i){
+      var ok = true, first = null;
+      $$('input,select,textarea', steps[i]).forEach(function(el){
+        if(el.type === 'hidden') return;
+        var v = (el.type === 'checkbox') ? el.checked : (el.value||'').trim();
+        var msg = '';
+        if(el.hasAttribute('required') && !v){
+          msg = (el.type === 'checkbox') ? 'Merci de cocher cette case pour continuer.' : 'Ce champ est obligatoire.';
+        } else if(el.type === 'email' && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){
+          msg = 'Adresse e-mail invalide.';
+        } else if(el.type === 'tel' && v && v.replace(/[^0-9]/g,'').length < 8){
+          msg = 'Numéro de téléphone invalide.';
+        } else if(el.type === 'url' && v && !/^https?:\/\/.+/.test(v)){
+          msg = 'Le lien doit commencer par https://';
+        }
+        setErr(el, msg);
+        if(msg){ ok = false; if(!first) first = el; }
+      });
+      if(first){ first.focus(); }
+      return ok;
+    }
+    var KEY = 'ultra_sales_day_form';
+    function fields(){ return $$('input,select,textarea', form).filter(function(el){ return el.id && el.id !== 'company_website' }) }
+    function mark(el){
+      var wrap = el.closest('.f'); if(!wrap) return;
+      var v = (el.type === 'checkbox') ? el.checked : (el.value||'').trim();
+      var bad = el.getAttribute('aria-invalid') === 'true';
+      wrap.classList.toggle('ok', !!v && !bad && el.type !== 'checkbox');
+    }
+    function save(){
+      try{
+        var o = {};
+        fields().forEach(function(el){ o[el.id] = (el.type === 'checkbox') ? el.checked : el.value });
+        localStorage.setItem(KEY, JSON.stringify({t: Date.now(), v: o}));
+      }catch(e){}
+    }
+    function restore(){
+      try{
+        var raw = localStorage.getItem(KEY); if(!raw) return;
+        var d = JSON.parse(raw);
+        if(!d || !d.v || Date.now() - d.t > 1000*60*60*24*14) return;   /* on oublie au bout de 14 jours */
+        fields().forEach(function(el){
+          if(!(el.id in d.v)) return;
+          if(el.type === 'checkbox') el.checked = !!d.v[el.id]; else el.value = d.v[el.id];
+          mark(el);
+        });
+      }catch(e){}
+    }
+    restore();
+    form.addEventListener('input', function(e){
+      if(!started){ started = true; track('form_start'); }
+      if(e.target.getAttribute('aria-invalid') === 'true') setErr(e.target, '');
+      mark(e.target); save();
+    });
+    form.addEventListener('change', function(e){ mark(e.target); save(); });
+    btnNext.addEventListener('click', function(){
+      if(!validate(cur)) return;
+      track('form_step_complete', {step: cur+1});
+      if(cur === 1){
+        var q = {
+          ageRange: $('#ageRange').value,
+          expCommerciale: $('#expCommerciale').value,
+          dispoParis: $('#dispoParis').value,
+          dispoBootcamp: $('#dispoBootcamp').value
+        };
+        var disqualified = (q.ageRange === 'Moins de 18 ans' || q.expCommerciale === 'Aucune expérience commerciale' || q.dispoParis === 'Non' || q.dispoBootcamp === 'Non');
+        if(disqualified){
+          track('form_not_eligible', q);
+          form.hidden = true;
+          var ne = $('#formNotEligible');
+          if(ne) ne.hidden = false;
+          (ne || form).scrollIntoView({block:'center', behavior:'smooth'});
+          return;
+        }
+      }
+      cur++; render();
+      form.scrollIntoView({block:'start', behavior:'smooth'});
+    });
+    btnPrev.addEventListener('click', function(){ cur--; render(); });
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      if(sending) return;
+      if(!validate(cur)) return;
+      if(($('#company_website').value||'').trim() !== ''){
+        state.className = 'formstate ko';
+        state.textContent = "Envoi bloqué. Recharge la page et réessaie.";
+        return;
+      }
+      var endpoint = C.applicationEndpoint;
+      if(!endpoint){
+        state.className = 'formstate ko';
+        state.textContent = "L'envoi n'est pas encore actif : aucun point de collecte n'est configuré (applicationEndpoint). Ta candidature n'a pas été transmise.";
+        track('form_submit_error', {reason:'no_endpoint'});
+        return;
+      }
+      var data = {};
+      new FormData(form).forEach(function(v,k){ if(k !== 'company_website') data[k] = v; });
+      data.consent   = $('#consent').checked;
+      data.eventName = C.eventName;
+      data.eventDate = C.dateLabel || null;
+      data.eventCity = C.city || null;
+      data.sourcePage = location.href.split('#')[0];
+      data.submittedAt = new Date().toISOString();
+      Object.keys(utm).forEach(function(k){ data[k] = utm[k]; });
+
+      sending = true;
+      btnSubmit.disabled = true;
+      var label = btnSubmit.textContent;
+      btnSubmit.innerHTML = '<span class="spin"></span>Envoi en cours…';
+      state.className = 'formstate';
+      state.textContent = '';
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      }).then(function(r){
+        if(!r.ok) throw new Error('HTTP ' + r.status);
+        track('form_submit_success');
+        try{ localStorage.removeItem(KEY) }catch(e){}
+        form.hidden = true;
+        var done = $('#formDone'); done.hidden = false;
+        done.scrollIntoView({block:'center', behavior:'smooth'});
+      }).catch(function(err){
+        track('form_submit_error', {reason: String(err && err.message || err)});
+        state.className = 'formstate ko';
+        state.textContent = "L'envoi a échoué. Vérifie ta connexion et réessaie — si le problème persiste, écris-nous et on prendra ta candidature manuellement.";
+      }).finally(function(){
+        sending = false;
+        btnSubmit.disabled = false;
+        btnSubmit.textContent = label;
+      });
+    });
+    render();
+  })();
+
+  /* ---------- apparitions douces ---------- */
+  var rvs = $$('.rv');
+  function showAll(){ rvs.forEach(function(el){ el.classList.add('in'); }); }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:0, rootMargin:'0px 0px -40px'});
+    rvs.forEach(function(el){ io.observe(el); });
+    setTimeout(showAll, 1600);
+  } else { showAll(); }
+})();
+</script>
+
+</body></html>
